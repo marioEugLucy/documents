@@ -1,0 +1,47 @@
+---
+# Sistema pai no catálogo — hub de micro frontends GVDASA
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: gvdasa-hub
+  title: Hub GVDASA
+  description: Plataforma de parcels single-spa (micro frontends React) integrados ao painel corporativo GVDASA.
+spec:
+  owner: guests
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: gvdasa-pcl-template-docs
+  title: GVdasa Frontend PCL — Documentação
+  description: >
+    Documentação de referência do template de parcels single-spa (React 18 + TypeScript)
+    para o hub GVDASA: instruções Copilot, regras de arquitetura e frontend, skills de
+    desenvolvimento e Architecture Decision Records (ADRs).
+  annotations:
+    github.com/project-slug: marioEugLucy/documents
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - documentation
+    - single-spa
+    - micro-frontend
+    - react
+    - typescript
+    - gvdasa
+    - azure-devops
+    - terraform
+  links:
+    - url: https://github.com/marioEugLucy/documents
+      title: Repositório
+      icon: github
+    - url: https://github.com/marioEugLucy/documents/tree/main/docs/adr
+      title: ADRs
+      icon: docs
+    - url: https://github.com/marioEugLucy/documents/blob/main/.github/copilot-instructions.md
+      title: Instruções de desenvolvimento
+      icon: catalog
+spec:
+  type: documentation
+  lifecycle: experimental
+  owner: guests
+  system: gvdasa-hub
