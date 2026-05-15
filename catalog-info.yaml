@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: documents
+  annotations:
+    github.com/project-slug: marioEugLucy/documents
+spec:
+  type: other
+  lifecycle: unknown
+  owner: guests
